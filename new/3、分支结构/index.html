@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>第三天 - 顾兆年的个人学习网站</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u7b2c\u4e09\u5929";
+        var mkdocs_page_input_path = "new\\3\u3001\u5206\u652f\u7ed3\u6784.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> 顾兆年的个人学习网站
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">主页</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">python</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1%E3%80%81%E5%88%9D%E8%AF%86Python/">第一天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2%E3%80%81%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/">第二天</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">第三天</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">分支结构的应用场景</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#if">if语句的使用</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">练习</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1">练习1：英制单位与公制单位互换</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2">练习2：掷骰子决定做什么</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3">练习3：百分制成绩转等级制</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4">练习4：输入三条边长如果能构成三角形就计算周长和面积</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#5">练习5：个人所得税计算器。</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4%E3%80%81%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/">第四天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5%E3%80%81%E6%80%BB%E7%BB%93%E5%92%8C%E7%BB%83%E4%B9%A0/">第五天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6%E3%80%81%E5%87%BD%E6%95%B0%E5%92%8C%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%BF%E7%94%A8/">第六天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">第七天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">第八天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../9%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/">第九天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../10%E3%80%81%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E5%92%8C%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">第十天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../11%E3%80%81%E6%96%87%E4%BB%B6%E5%92%8C%E5%BC%82%E5%B8%B8/">第十一天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../12%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">第十二天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../13%E3%80%81%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/">第十三天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../14-A%E3%80%81%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/">第十四天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../14-B%E3%80%81%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/">第十四天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../15%E3%80%81%E5%9B%BE%E5%83%8F%E5%92%8C%E5%8A%9E%E5%85%AC%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86/">第十五天</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">顾兆年的个人学习网站</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">python</li>
+      <li class="breadcrumb-item active">第三天</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="day03-">Day03 - 分支结构</h2>
+<h3 id="_1">分支结构的应用场景</h3>
+<p>迄今为止，我们写的Python代码都是一条一条语句顺序执行，这种结构的代码我们称之为顺序结构。然而仅有顺序结构并不能解决所有的问题，比如我们设计一个游戏，游戏第一关的通关条件是玩家获得1000分，那么在完成本局游戏后我们要根据玩家得到分数来决定究竟是进入第二关还是告诉玩家“Game Over”，这里就会产生两个分支，而且这两个分支只有一个会被执行，这就是程序中分支结构。类似的场景还有很多，给大家一分钟的时间，你应该可以想到至少5个以上这样的例子，赶紧试一试。</p>
+<h3 id="if">if语句的使用</h3>
+<p>在Python中，要构造分支结构可以使用<code>if</code>、<code>elif</code>和<code>else</code>关键字。所谓关键字就是有特殊含义的单词，像<code>if</code>和<code>else</code>就是专门用于构造分支结构的关键字，很显然你不能够使用它作为变量名（事实上，用作其他的标识符也是不可以）。下面的例子中演示了如何构造一个分支结构。</p>
+<pre><code class="language-Python">&quot;&quot;&quot;
+用户身份验证
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+username = input('请输入用户名: ')
+password = input('请输入口令: ')
+# 如果希望输入口令时 终端中没有回显 可以使用getpass模块的getpass函数
+# import getpass
+# password = getpass.getpass('请输入口令: ')
+if username == 'admin' and password == '123456':
+    print('身份验证成功!')
+else:
+    print('身份验证失败!')
+</code></pre>
+<p>唯一需要说明的是和C/C++、Java等语言不同，Python中没有用花括号来构造代码块而是使用了缩进的方式来设置代码的层次结构，如果<code>if</code>条件成立的情况下需要执行多条语句，只要保持多条语句具有相同的缩进就可以了，换句话说连续的代码如果又保持了相同的缩进那么它们属于同一个代码块，相当于是一个执行的整体。</p>
+<p>当然如果要构造出更多的分支，可以使用<code>if…elif…else…</code>结构，例如下面的分段函数求值。</p>
+<p>$$f(x)=\begin{cases} 3x-5&amp;\text{(x&gt;1)}\x+2&amp;\text{(-1}\leq\text{x}\leq\text{1)}\5x+3&amp;\text {(x&lt;-1)}\end{cases}$$</p>
+<pre><code class="language-Python">&quot;&quot;&quot;
+分段函数求值
+
+        3x - 5  (x &gt; 1)
+f(x) =  x + 2   (-1 &lt;= x &lt;= 1)
+        5x + 3  (x &lt; -1)
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+x = float(input('x = '))
+if x &gt; 1:
+    y = 3 * x - 5
+elif x &gt;= -1:
+    y = x + 2
+else:
+    y = 5 * x + 3
+print('f(%.2f) = %.2f' % (x, y))
+</code></pre>
+<p>当然根据实际开发的需要，分支结构是可以嵌套的，例如判断是否通关以后还要根据你获得的宝物或者道具的数量对你的表现给出等级（比如点亮两颗或三颗星星），那么我们就需要在<code>if</code>的内部构造出一个新的分支结构，同理<code>elif</code>和<code>else</code>中也可以再构造新的分支，我们称之为嵌套的分支结构，也就是说上面的代码也可以写成下面的样子。</p>
+<pre><code class="language-Python">&quot;&quot;&quot;
+分段函数求值
+        3x - 5  (x &gt; 1)
+f(x) =  x + 2   (-1 &lt;= x &lt;= 1)
+        5x + 3  (x &lt; -1)
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+x = float(input('x = '))
+if x &gt; 1:
+    y = 3 * x - 5
+else:
+    if x &gt;= -1:
+        y = x + 2
+    else:
+        y = 5 * x + 3
+print('f(%.2f) = %.2f' % (x, y))
+</code></pre>
+<blockquote>
+<p><strong>说明：</strong>大家可以自己感受一下这两种写法到底是哪一种更好。在之前我们提到的Python之禅中有这么一句话“Flat is better than nested.”，之所以提出这个观点是因为嵌套结构的嵌套层次多了之后会严重的影响代码的可读性，如果可以使用扁平化的结构就不要去用嵌套，因此之前的写法是更好的做法。</p>
+</blockquote>
+<h3 id="_2">练习</h3>
+<h4 id="1">练习1：英制单位与公制单位互换</h4>
+<pre><code class="language-Python">&quot;&quot;&quot;
+英制单位英寸和公制单位厘米互换
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+value = float(input('请输入长度: '))
+unit = input('请输入单位: ')
+if unit == 'in' or unit == '英寸':
+    print('%f英寸 = %f厘米' % (value, value * 2.54))
+elif unit == 'cm' or unit == '厘米':
+    print('%f厘米 = %f英寸' % (value, value / 2.54))
+else:
+    print('请输入有效的单位')
+</code></pre>
+<h4 id="2">练习2：掷骰子决定做什么</h4>
+<pre><code class="language-Python">&quot;&quot;&quot;
+掷骰子决定做什么事情
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+from random import randint
+
+face = randint(1, 6)
+if face == 1:
+    result = '唱首歌'
+elif face == 2:
+    result = '跳个舞'
+elif face == 3:
+    result = '学狗叫'
+elif face == 4:
+    result = '做俯卧撑'
+elif face == 5:
+    result = '念绕口令'
+else:
+    result = '讲冷笑话'
+print(result)
+</code></pre>
+<blockquote>
+<p><strong>说明：</strong>上面的代码中使用了random模块的randint函数生成指定范围的随机数来模拟掷骰子。</p>
+</blockquote>
+<h4 id="3">练习3：百分制成绩转等级制</h4>
+<pre><code class="language-Python">&quot;&quot;&quot;
+百分制成绩转等级制成绩
+90分以上    --&gt; A
+80分~89分    --&gt; B
+70分~79分    --&gt; C
+60分~69分    --&gt; D
+60分以下    --&gt; E
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+score = float(input('请输入成绩: '))
+if score &gt;= 90:
+    grade = 'A'
+elif score &gt;= 80:
+    grade = 'B'
+elif score &gt;= 70:
+    grade = 'C'
+elif score &gt;= 60:
+    grade = 'D'
+else:
+    grade = 'E'
+print('对应的等级是:', grade)
+</code></pre>
+<h4 id="4">练习4：输入三条边长如果能构成三角形就计算周长和面积</h4>
+<pre><code class="language-Python">&quot;&quot;&quot;
+判断输入的边长能否构成三角形
+如果能则计算出三角形的周长和面积
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+import math
+
+a = float(input('a = '))
+b = float(input('b = '))
+c = float(input('c = '))
+if a + b &gt; c and a + c &gt; b and b + c &gt; a:
+    print('周长: %f' % (a + b + c))
+    p = (a + b + c) / 2
+    area = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    print('面积: %f' % (area))
+else:
+    print('不能构成三角形')
+</code></pre>
+<blockquote>
+<p><strong>说明：</strong>上面的代码中使用了<code>math</code>模块的<code>sqrt</code>函数来计算平方根。用边长计算三角形面积的公式叫做<a href="https://zh.wikipedia.org/zh-hans/海伦公式">海伦公式</a>。</p>
+</blockquote>
+<h4 id="5">练习5：个人所得税计算器。</h4>
+<pre><code class="language-Python">&quot;&quot;&quot;
+输入月收入和五险一金计算个人所得税
+
+Version: 0.1
+Author: 骆昊
+&quot;&quot;&quot;
+
+salary = float(input('本月收入: '))
+insurance = float(input('五险一金: '))
+diff = salary - insurance - 3500
+if diff &lt;= 0:
+    rate = 0
+    deduction = 0
+elif diff &lt; 1500:
+    rate = 0.03
+    deduction = 0
+elif diff &lt; 4500:
+    rate = 0.1
+    deduction = 105
+elif diff &lt; 9000:
+    rate = 0.2
+    deduction = 555
+elif diff &lt; 35000:
+    rate = 0.25
+    deduction = 1005
+elif diff &lt; 55000:
+    rate = 0.3
+    deduction = 2755
+elif diff &lt; 80000:
+    rate = 0.35
+    deduction = 5505
+else:
+    rate = 0.45
+    deduction = 13505
+tax = abs(diff * rate - deduction)
+print('个人所得税: ￥%.2f元' % tax)
+print('实际到手收入: ￥%.2f元' % (diff + 3500 - tax))
+</code></pre>
+<blockquote>
+<p><strong>说明：</strong>上面的代码中使用了Python内置的<code>abs()</code>函数取绝对值来处理<code>-0</code>的问题。</p>
+</blockquote>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../2%E3%80%81%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/" class="btn btn-neutral float-left" title="第二天"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../4%E3%80%81%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" class="btn btn-neutral float-right" title="第四天">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../2%E3%80%81%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../4%E3%80%81%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

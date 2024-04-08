@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>第十一天 - 顾兆年的个人学习网站</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u7b2c\u5341\u4e00\u5929";
+        var mkdocs_page_input_path = "new\\11\u3001\u6587\u4ef6\u548c\u5f02\u5e38.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> 顾兆年的个人学习网站
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">主页</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">python</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../1%E3%80%81%E5%88%9D%E8%AF%86Python/">第一天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2%E3%80%81%E8%AF%AD%E8%A8%80%E5%85%83%E7%B4%A0/">第二天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../3%E3%80%81%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/">第三天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../4%E3%80%81%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/">第四天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5%E3%80%81%E6%80%BB%E7%BB%93%E5%92%8C%E7%BB%83%E4%B9%A0/">第五天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../6%E3%80%81%E5%87%BD%E6%95%B0%E5%92%8C%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%BF%E7%94%A8/">第六天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../7%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E5%B8%B8%E7%94%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">第七天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../8%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80/">第八天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../9%E3%80%81%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%BF%9B%E9%98%B6/">第九天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../10%E3%80%81%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E5%92%8C%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">第十天</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">第十一天</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">读写文本文件</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">读写二进制文件</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#json">读写JSON文件</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../12%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">第十二天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../13%E3%80%81%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/">第十三天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../14-A%E3%80%81%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/">第十四天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../14-B%E3%80%81%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91/">第十四天</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../15%E3%80%81%E5%9B%BE%E5%83%8F%E5%92%8C%E5%8A%9E%E5%85%AC%E6%96%87%E6%A1%A3%E5%A4%84%E7%90%86/">第十五天</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">顾兆年的个人学习网站</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">python</li>
+      <li class="breadcrumb-item active">第十一天</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="_1">文件和异常</h2>
+<p>在实际开发中，常常需要对程序中的数据进行<a href="https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96">持久化</a>操作，而实现数据持久化最直接简单的方式就是将数据保存到文件中。说到“文件”这个词，可能需要先科普一下关于<a href="https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F">文件系统</a>的知识，对于这个概念，维基百科上给出了很好的诠释，这里不再浪费笔墨。</p>
+<p>在Python中实现文件的读写操作其实非常简单，通过Python内置的<code>open</code>函数，我们可以指定文件名、操作模式、编码信息等来获得操作文件的对象，接下来就可以对文件进行读写操作了。这里所说的操作模式是指要打开什么样的文件（字符文件还是二进制文件）以及做什么样的操作（读、写还是追加），具体的如下表所示。</p>
+<table>
+<thead>
+<tr>
+<th>操作模式</th>
+<th>具体含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>'r'</code></td>
+<td>读取 （默认）</td>
+</tr>
+<tr>
+<td><code>'w'</code></td>
+<td>写入（会先截断之前的内容）</td>
+</tr>
+<tr>
+<td><code>'x'</code></td>
+<td>写入，如果文件已经存在会产生异常</td>
+</tr>
+<tr>
+<td><code>'a'</code></td>
+<td>追加，将内容写入到已有文件的末尾</td>
+</tr>
+<tr>
+<td><code>'b'</code></td>
+<td>二进制模式</td>
+</tr>
+<tr>
+<td><code>'t'</code></td>
+<td>文本模式（默认）</td>
+</tr>
+<tr>
+<td><code>'+'</code></td>
+<td>更新（既可以读又可以写）</td>
+</tr>
+</tbody>
+</table>
+<p>下面这张图来自于<a href="http://www.runoob.com">菜鸟教程</a>网站，它展示了如果根据应用程序的需要来设置操作模式。</p>
+<p><img alt="" src="../res/file-open-mode.png" /></p>
+<h3 id="_2">读写文本文件</h3>
+<p>读取文本文件时，需要在使用<code>open</code>函数时指定好带路径的文件名（可以使用相对路径或绝对路径）并将文件模式设置为<code>'r'</code>（如果不指定，默认值也是<code>'r'</code>），然后通过<code>encoding</code>参数指定编码（如果不指定，默认值是None，那么在读取文件时使用的是操作系统默认的编码），如果不能保证保存文件时使用的编码方式与encoding参数指定的编码方式是一致的，那么就可能因无法解码字符而导致读取失败。下面的例子演示了如何读取一个纯文本文件。</p>
+<pre><code class="language-Python">def main():
+    f = open('致橡树.txt', 'r', encoding='utf-8')
+    print(f.read())
+    f.close()
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<p>请注意上面的代码，如果<code>open</code>函数指定的文件并不存在或者无法打开，那么将引发异常状况导致程序崩溃。为了让代码有一定的健壮性和容错性，我们可以使用Python的异常机制对可能在运行时发生状况的代码进行适当的处理，如下所示。</p>
+<pre><code class="language-Python">def main():
+    f = None
+    try:
+        f = open('致橡树.txt', 'r', encoding='utf-8')
+        print(f.read())
+    except FileNotFoundError:
+        print('无法打开指定的文件!')
+    except LookupError:
+        print('指定了未知的编码!')
+    except UnicodeDecodeError:
+        print('读取文件时解码错误!')
+    finally:
+        if f:
+            f.close()
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<p>在Python中，我们可以将那些在运行时可能会出现状况的代码放在<code>try</code>代码块中，在<code>try</code>代码块的后面可以跟上一个或多个<code>except</code>来捕获可能出现的异常状况。例如在上面读取文件的过程中，文件找不到会引发<code>FileNotFoundError</code>，指定了未知的编码会引发<code>LookupError</code>，而如果读取文件时无法按指定方式解码会引发<code>UnicodeDecodeError</code>，我们在<code>try</code>后面跟上了三个<code>except</code>分别处理这三种不同的异常状况。最后我们使用<code>finally</code>代码块来关闭打开的文件，释放掉程序中获取的外部资源，由于<code>finally</code>块的代码不论程序正常还是异常都会执行到（甚至是调用了<code>sys</code>模块的<code>exit</code>函数退出Python环境，<code>finally</code>块都会被执行，因为<code>exit</code>函数实质上是引发了<code>SystemExit</code>异常），因此我们通常把<code>finally</code>块称为“总是执行代码块”，它最适合用来做释放外部资源的操作。如果不愿意在<code>finally</code>代码块中关闭文件对象释放资源，也可以使用上下文语法，通过<code>with</code>关键字指定文件对象的上下文环境并在离开上下文环境时自动释放文件资源，代码如下所示。</p>
+<pre><code class="language-Python">def main():
+    try:
+        with open('致橡树.txt', 'r', encoding='utf-8') as f:
+            print(f.read())
+    except FileNotFoundError:
+        print('无法打开指定的文件!')
+    except LookupError:
+        print('指定了未知的编码!')
+    except UnicodeDecodeError:
+        print('读取文件时解码错误!')
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<p>除了使用文件对象的<code>read</code>方法读取文件之外，还可以使用<code>for-in</code>循环逐行读取或者用<code>readlines</code>方法将文件按行读取到一个列表容器中，代码如下所示。</p>
+<pre><code class="language-Python">import time
+
+
+def main():
+    # 一次性读取整个文件内容
+    with open('致橡树.txt', 'r', encoding='utf-8') as f:
+        print(f.read())
+
+    # 通过for-in循环逐行读取
+    with open('致橡树.txt', mode='r') as f:
+        for line in f:
+            print(line, end='')
+            time.sleep(0.5)
+    print()
+
+    # 读取文件按行读取到列表中
+    with open('致橡树.txt') as f:
+        lines = f.readlines()
+    print(lines)
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<p>要将文本信息写入文件文件也非常简单，在使用<code>open</code>函数时指定好文件名并将文件模式设置为<code>'w'</code>即可。注意如果需要对文件内容进行追加式写入，应该将模式设置为<code>'a'</code>。如果要写入的文件不存在会自动创建文件而不是引发异常。下面的例子演示了如何将1-9999直接的素数分别写入三个文件中（1-99之间的素数保存在a.txt中，100-999之间的素数保存在b.txt中，1000-9999之间的素数保存在c.txt中）。</p>
+<pre><code class="language-Python">from math import sqrt
+
+
+def is_prime(n):
+    &quot;&quot;&quot;判断素数的函数&quot;&quot;&quot;
+    assert n &gt; 0
+    for factor in range(2, int(sqrt(n)) + 1):
+        if n % factor == 0:
+            return False
+    return True if n != 1 else False
+
+
+def main():
+    filenames = ('a.txt', 'b.txt', 'c.txt')
+    fs_list = []
+    try:
+        for filename in filenames:
+            fs_list.append(open(filename, 'w', encoding='utf-8'))
+        for number in range(1, 10000):
+            if is_prime(number):
+                if number &lt; 100:
+                    fs_list[0].write(str(number) + '\n')
+                elif number &lt; 1000:
+                    fs_list[1].write(str(number) + '\n')
+                else:
+                    fs_list[2].write(str(number) + '\n')
+    except IOError as ex:
+        print(ex)
+        print('写文件时发生错误!')
+    finally:
+        for fs in fs_list:
+            fs.close()
+    print('操作完成!')
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<h3 id="_3">读写二进制文件</h3>
+<p>知道了如何读写文本文件要读写二进制文件也就很简单了，下面的代码实现了复制图片文件的功能。</p>
+<pre><code class="language-Python">def main():
+    try:
+        with open('guido.jpg', 'rb') as fs1:
+            data = fs1.read()
+            print(type(data))  # &lt;class 'bytes'&gt;
+        with open('吉多.jpg', 'wb') as fs2:
+            fs2.write(data)
+    except FileNotFoundError as e:
+        print('指定的文件无法打开.')
+    except IOError as e:
+        print('读写文件时出现错误.')
+    print('程序执行结束.')
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<h3 id="json">读写JSON文件</h3>
+<p>通过上面的讲解，我们已经知道如何将文本数据和二进制数据保存到文件中，那么这里还有一个问题，如果希望把一个列表或者一个字典中的数据保存到文件中又该怎么做呢？答案是将数据以JSON格式进行保存。JSON是“JavaScript Object Notation”的缩写，它本来是JavaScript语言中创建对象的一种字面量语法，现在已经被广泛的应用于跨平台跨语言的数据交换，原因很简单，因为JSON也是纯文本，任何系统任何编程语言处理纯文本都是没有问题的。目前JSON基本上已经取代了XML作为异构系统间交换数据的事实标准。关于JSON的知识，更多的可以参考<a href="http://json.org">JSON的官方网站</a>，从这个网站也可以了解到每种语言处理JSON数据格式可以使用的工具或三方库，下面是一个JSON的简单例子。</p>
+<pre><code class="language-JSON">{
+    'name': '骆昊',
+    'age': 38,
+    'qq': 957658,
+    'friends': ['王大锤', '白元芳'],
+    'cars': [
+        {'brand': 'BYD', 'max_speed': 180},
+        {'brand': 'Audi', 'max_speed': 280},
+        {'brand': 'Benz', 'max_speed': 320}
+    ]
+}
+</code></pre>
+<p>可能大家已经注意到了，上面的JSON跟Python中的字典其实是一样一样的，事实上JSON的数据类型和Python的数据类型是很容易找到对应关系的，如下面两张表所示。</p>
+<table>
+<thead>
+<tr>
+<th>JSON</th>
+<th>Python</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>object</td>
+<td>dict</td>
+</tr>
+<tr>
+<td>array</td>
+<td>list</td>
+</tr>
+<tr>
+<td>string</td>
+<td>str</td>
+</tr>
+<tr>
+<td>number (int / real)</td>
+<td>int / float</td>
+</tr>
+<tr>
+<td>true / false</td>
+<td>True / False</td>
+</tr>
+<tr>
+<td>null</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Python</th>
+<th>JSON</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dict</td>
+<td>object</td>
+</tr>
+<tr>
+<td>list, tuple</td>
+<td>array</td>
+</tr>
+<tr>
+<td>str</td>
+<td>string</td>
+</tr>
+<tr>
+<td>int, float, int- &amp; float-derived Enums</td>
+<td>number</td>
+</tr>
+<tr>
+<td>True / False</td>
+<td>true / false</td>
+</tr>
+<tr>
+<td>None</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<p>我们使用Python中的json模块就可以将字典或列表以JSON格式保存到文件中，代码如下所示。</p>
+<pre><code class="language-Python">import json
+
+
+def main():
+    mydict = {
+        'name': '骆昊',
+        'age': 38,
+        'qq': 957658,
+        'friends': ['王大锤', '白元芳'],
+        'cars': [
+            {'brand': 'BYD', 'max_speed': 180},
+            {'brand': 'Audi', 'max_speed': 280},
+            {'brand': 'Benz', 'max_speed': 320}
+        ]
+    }
+    try:
+        with open('data.json', 'w', encoding='utf-8') as fs:
+            json.dump(mydict, fs)
+    except IOError as e:
+        print(e)
+    print('保存数据完成!')
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<p>json模块主要有四个比较重要的函数，分别是：</p>
+<ul>
+<li><code>dump</code> - 将Python对象按照JSON格式序列化到文件中</li>
+<li><code>dumps</code> - 将Python对象处理成JSON格式的字符串</li>
+<li><code>load</code> - 将文件中的JSON数据反序列化成对象</li>
+<li><code>loads</code> - 将字符串的内容反序列化成Python对象</li>
+</ul>
+<p>这里出现了两个概念，一个叫序列化，一个叫反序列化。自由的百科全书<a href="https://zh.wikipedia.org/">维基百科</a>上对这两个概念是这样解释的：“序列化（serialization）在计算机科学的数据处理中，是指将数据结构或对象状态转换为可以存储或传输的形式，这样在需要的时候能够恢复到原先的状态，而且通过序列化的数据重新获取字节时，可以利用这些字节来产生原始对象的副本（拷贝）。与这个过程相反的动作，即从一系列字节中提取数据结构的操作，就是反序列化（deserialization）”。</p>
+<p>目前绝大多数网络数据服务（或称之为网络API）都是基于<a href="https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE">HTTP协议</a>提供JSON格式的数据，关于HTTP协议的相关知识，可以看看阮一峰老师的<a href="http://www.ruanyifeng.com/blog/2016/08/http.html">《HTTP协议入门》</a>，如果想了解国内的网络数据服务，可以看看<a href="https://www.juhe.cn/">聚合数据</a>和<a href="http://www.avatardata.cn/">阿凡达数据</a>等网站，国外的可以看看<a href="http://apis.io/">{API}Search</a>网站。下面的例子演示了如何使用<a href="http://docs.python-requests.org/zh_CN/latest/">requests</a>模块（封装得足够好的第三方网络访问模块）访问网络API获取国内新闻，如何通过json模块解析JSON数据并显示新闻标题，这个例子使用了<a href="https://www.tianapi.com/">天行数据</a>提供的国内新闻数据接口，其中的APIKey需要自己到该网站申请。</p>
+<pre><code class="language-Python">import requests
+import json
+
+
+def main():
+    resp = requests.get('http://api.tianapi.com/guonei/?key=APIKey&amp;num=10')
+    data_model = json.loads(resp.text)
+    for news in data_model['newslist']:
+        print(news['title'])
+
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<p>在Python中要实现序列化和反序列化除了使用json模块之外，还可以使用pickle和shelve模块，但是这两个模块是使用特有的序列化协议来序列化数据，因此序列化后的数据只能被Python识别。关于这两个模块的相关知识可以自己看看网络上的资料。另外，如果要了解更多的关于Python异常机制的知识，可以看看segmentfault上面的文章<a href="https://segmentfault.com/a/1190000007736783">《总结：Python中的异常处理》</a>，这篇文章不仅介绍了Python中异常机制的使用，还总结了一系列的最佳实践，很值得一读。</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../10%E3%80%81%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E5%92%8C%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/" class="btn btn-neutral float-left" title="第十天"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../12%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="btn btn-neutral float-right" title="第十二天">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../10%E3%80%81%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E5%92%8C%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../12%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
